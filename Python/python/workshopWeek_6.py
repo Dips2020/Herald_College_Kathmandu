@@ -287,9 +287,7 @@
 #     "fruits": ["apple", "banana", "mango"],
 #     "prices": [1.0, 0.5, 1.5],
 # }
-
 # print(products["fruits"][2], products["prices"][2])
-
 
 # ⬇️Exercise 4 --- 10
 # ⬇️Exercise 4 --- 10
