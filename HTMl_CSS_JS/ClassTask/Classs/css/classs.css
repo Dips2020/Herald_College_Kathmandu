@@ -1,0 +1,15 @@
+* {
+  text-decoration: none;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+.blah {
+  font-size: 20px;
+}
+footer {
+  display: flex;
+  align-items: center;
+}
