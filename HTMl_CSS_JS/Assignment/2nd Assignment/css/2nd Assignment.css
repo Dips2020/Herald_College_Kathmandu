@@ -3,14 +3,12 @@
   padding: 0;
 }
 body {
-  /* font-family: "Roboto", sans-serif; */
   font-family: "Roboto Mono", monospace;
   color: white;
   background-color: rgb(103, 102, 102);
 }
 /* ---------------------- ⬇️ 1st section ⬇️ ---------------------- */
 .first_container {
-  /* background-color: #0c3b2e; */
   width: 100%;
   height: 100vh;
 }
