@@ -67,10 +67,27 @@
 #     print("The total dice roll:", total_roll)
 #     if (total_roll == guess):
 #         print("You win!.")
-#         num_wins = num_wins + 1
+#         num_wins = (num_wins + 1)
 #     else:
 #         print("Sorry you lose.!")
-#     rounds_played = rounds_played + 1
+#     rounds_played = (rounds_played + 1)
 #     print("The total rounds played:", rounds_played)
 #     win_percentage = (num_wins / rounds_played * 100)
 #     print(f"Win percentage: {win_percentage:.2f}%")
+
+
+# B. Write a program to change the key value pair of existing dictionary.
+# Question 4 ⬇️ B->Solution ⬇️
+# Create a dictionary
+
+# Create a dictionary
+# my_dict = {"apple": 2, "banana": 4, "orange": 6}
+
+# # Print the original dictionary
+# print("Original Dictionary:")
+# print(my_dict)
+
+# # Change the key "apple" to "pear" and its value to 8
+# my_dict["pear"] = my_dict.pop("apple", 0)
+# print("Updated Dictionary:")
+# print(my_dict)

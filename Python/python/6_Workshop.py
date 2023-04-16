@@ -13,7 +13,6 @@
 # ⬇️Exercise 2 ---3
 # my_tuple = (1, 2, 3, 4, 5)
 # # my_tuple = ("Dipesh Bhattarai")
-
 # print(len(my_tuple))
 
 # ⬇️Exercise 2 ---4
@@ -30,9 +29,7 @@
 
 # ⬇️Exercise 2 ---6
 # num_list = input("Enter a list of integers, separated by spaces: ").split()
-
 # num_list = ['over' if int(num) > 100 else int(num) for num in num_list]
-
 # print(num_list)
 #
 # ⬇️Exercise 2 --- 7
@@ -281,8 +278,8 @@
 #     {"name": "Superman", "age": 30},
 #     {"name": "Thor", "age": 35},
 # ]
-
-# print(people[1]["name"])
+# print(people[1]["name"], people[1]["age"])
+# # print(people[1]["age"])
 # products = {
 #     "fruits": ["apple", "banana", "mango"],
 #     "prices": [1.0, 0.5, 1.5],
