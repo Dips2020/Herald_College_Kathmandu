@@ -91,3 +91,23 @@
 # my_dict["pear"] = my_dict.pop("apple", 0)
 # print("Updated Dictionary:")
 # print(my_dict)
+
+
+# Question 5 ⬇️ B->Solution ⬇️
+# create a 3x3 matrix filled with 1's
+# matrix = [[1, 1, 1],
+#           [1, 1, 1],
+#           [1, 1, 1]]
+
+# # prompt the user to input a row and column number
+# row = int(input("Enter the row number (0-2): "))
+# col = int(input("Enter the column number (0-2): "))
+
+# # update the matrix with the user's input
+# matrix[row][col] = "X"
+
+# # print the updated matrix
+# for i in range(3):
+#     for j in range(3):
+#         print(matrix[i][j], end=" ")
+#     print()

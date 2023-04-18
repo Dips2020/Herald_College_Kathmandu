@@ -97,19 +97,15 @@
 # # print the result
 # print("Your BMI is:", bmi)
 #
+#
 # import math
-#
-# # Input radius of the hemisphere
+# # # Input radius of the hemisphere
 # radius = float(input("Enter the radius of the hemisphere: "))
-#
-# # Calculate the surface area of the hemisphere
+# # # Calculate the surface area of the hemisphere
 # surface_area = 2 * math.pi * radius ** 2
-#
 # # Display the surface area of the hemisphere
 # print("The total surface area of the hemisphere is:", surface_area)
-
 # num = int(input("Enter a number: "))
-#
 # cube = num ** 1/3
 # print("Cube of number: ", cube)
 #
@@ -369,7 +365,7 @@
 # else:
 #     print("Grade F")
 # 2nd ⬇️
-# def grade (percentage):
+# def grade(percentage):
 #     if (percentage > 90):
 #         print("Grade A")
 #     elif (percentage > 80 and percentage <= 90):
@@ -378,6 +374,8 @@
 #         print("Grade B")
 #     else:
 #         print("Grade F")
+
+
 # marks = float(input("Enter the marks: "))
 # grade(marks)
 
