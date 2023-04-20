@@ -70,31 +70,31 @@
 
 
 # Part 2 ⬇️ 3
-# this is written inside the file
-# Today’s high temperature will be 75 degrees
-try:
-    f = open("./Python/txt_file/7_Workshop.txt", "r")
-    x = f.read()
-    f.close()
-    print(x)
-except:
-    print("Invalid file name")
+# # this is written inside the file
+# # Today’s high temperature will be 75 degrees
+# try:
+#     f = open("./Python/txt_file/7_Workshop.txt", "r")
+#     x = f.read()
+#     f.close()
+#     print(x)
+# except:
+#     print("Invalid file name")
 
 
-def check_quotes(line):
-    quote = "Todayâ€™s high temperature will be 75 degrees"
-    x1 = quote.split(" ")
-    list_1 = []
-    for i in x1:
-        list_1.append(i)
-    list_2 = []
-    x2 = x.split(" ")
-    for j in x2:
-        list_2.append(j)
-    set1 = set(list_1)
-    set2 = set(list_2)
-    z = set1.issubset(set2)
-    return z
+# def check_quotes(line):
+#     quote = "Todayâ€™s high temperature will be 75 degrees"
+#     x1 = quote.split(" ")
+#     list_1 = []
+#     for i in x1:
+#         list_1.append(i)
+#     list_2 = []
+#     x2 = x.split(" ")
+#     for j in x2:
+#         list_2.append(j)
+#     set1 = set(list_1)
+#     set2 = set(list_2)
+#     z = set1.issubset(set2)
+#     return z
 
 # Part 2 ⬇️ 1
 # Part 2 ⬇️ 1
