@@ -1,0 +1,6 @@
+Name: Dipesh Bhattarai
+Age: 20
+Qualification: Bachelor
+Description: I am currently studying at HCK
+Hobby: Playing mobile games
+Interest: Coding

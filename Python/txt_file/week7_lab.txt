@@ -1,0 +1,6 @@
+Black
+White
+Green
+Blue
+Pink
+Yellow
