@@ -71,7 +71,7 @@ with open("./Python/txt_file/week7_lab.txt", "r") as file:
     # print("Shortest Word: ", shortest_word)
     # print("Equal Length Words: ", equal_length_words)
 
-    with open("dips.txt", "w") as sajan:
+    with open("./Python/txt_file/7lab_QNo5_dips.txt", "w") as sajan:
         # with open("dips.txt", "a") as sajan:
         sajan.write(f"Time and Date: {dates}")
         sajan.write(f"\nLongest Words:\n{longest_word}")
