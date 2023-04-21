@@ -40,51 +40,62 @@
 
 
 # 5.⬇️Write a Python program that reads a text file named "data.txt" and finds the longest word in the file. The program should use a loop to read each line of the file, split each line into words using the split () method, and then iterate over each word to find the longest one. Once the loop has finished, the program should print the longest and shortest and equal length words found in the file.
-# with open("./Python/txt_file/week7_lab.txt", "r") as file:
-#     # Initialize variables to store the longest, shortest, and equal length words
-#     longest_word = ""
-#     shortest_word = ""
-#     equal_length_words = []
+from datetime import datetime
+with open("./Python/txt_file/week7_lab.txt", "r") as file:
+    # Initialize variables to store the longest, shortest, and equal length words
+    longest_word = ""
+    shortest_word = ""
+    equal_length_words = []
+    dates = datetime.now()
 
-#     # Iterate through each line of the file
-#     for line in file:
-#         # Split each line into words
-#         words = line.split()
+    # Iterate through each line of the file
+    for line in file:
+        # Split each line into words
+        words = line.split()
+        # print("Words", words)
 
-#         # Iterate over each word and find the longest, shortest, and equal length words
-#         for word in words:
-#             if len(word) > len(longest_word):
-#                 longest_word = word
-#             # elif len(word) < len(shortest_word) or shortest_word == "":
-#             elif len(word) < len(shortest_word) or shortest_word == "":
-#                 shortest_word = word
-#             elif len(word) == len(longest_word) or len(word) == len(shortest_word):
-#                 equal_length_words.append(word)
+        # Iterate over each word and find the longest, shortest, and equal length words
+        for word in words:
+            # print("word", word)
+            if len(word) > len(longest_word):
+                longest_word = word
+            # elif len(word) < len(longest_word) or len(word) < len(equal_length_words):
+            if len(word) < len(shortest_word) or not shortest_word:
+                shortest_word = word
+            # print("Shortest Words", shortest_word)
+            if len(word) == len(longest_word) and word not in equal_length_words:
+                equal_length_words.append(word)
 
-#     # Print the longest, shortest, and equal length words found in the file
-#     print("Longest Word: ", longest_word)
-#     print("Shortest Word: ", shortest_word)
-#     print("Equal Length Words: ", equal_length_words)
+    # Print the longest, shortest, and equal length words found in the file
+    # print("Longest Word: ", longest_word)
+    # print("Shortest Word: ", shortest_word)
+    # print("Equal Length Words: ", equal_length_words)
 
+    with open("dips.txt", "w") as sajan:
+        # with open("dips.txt", "a") as sajan:
+        sajan.write(f"Time and Date: {dates}")
+        sajan.write(f"\nLongest Words:\n{longest_word}")
+        sajan.write(f"\nShortest Words:\n{shortest_word}")
+        sajan.write(f"\nEqual Lenght Words:\n{equal_length_words}")
 
 # 6.⬇️Write a python program to save a simple inquiry form data to a file name called formdata.txt. Form details (name, age, qualification, description, hobby, and interest, etc.)
-name = input("Enter your name: ")
-age = input("Enter your age: ")
-qualification = input("Enter your qualification: ")
-description = input("Enter a short description about yourself: ")
-hobby = input("Enter your hobby: ")
-interest = input("Enter your interests: ")
+# name = input("Enter your name: ")
+# age = input("Enter your age: ")
+# qualification = input("Enter your qualification: ")
+# description = input("Enter a short description about yourself: ")
+# hobby = input("Enter your hobby: ")
+# interest = input("Enter your interests: ")
 
-data = {
-    "Name": name,
-    "Age": age,
-    "Qualification": qualification,
-    "Description": description,
-    "Hobby": hobby,
-    "Interest": interest
-}
-# write the user's data to a file
-with open("./Python/txt_file/7lab_formdata.txt", "w") as file:
-    for key, value in data.items():
-        file.write(f"{key}: {value}\n")
-print("Your data has been saved to formdata.txt")
+# data = {
+#     "Name": name,
+#     "Age": age,
+#     "Qualification": qualification,
+#     "Description": description,
+#     "Hobby": hobby,
+#     "Interest": interest
+# }
+# # write the user's data to a file
+# with open("./Python/txt_file/7lab_formdata.txt", "w") as file:
+#     for key, value in data.items():
+#         file.write(f"{key}: {value}\n")
+# print("Your data has been saved to formdata.txt")

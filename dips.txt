@@ -1,0 +1,7 @@
+Time and Date: 2023-04-21 12:53:55.669456
+Longest Words:
+wa6syrftc
+Shortest Words:
+or
+Equal Lenght Words:
+['This', 'color', 'wa6syrftc']
