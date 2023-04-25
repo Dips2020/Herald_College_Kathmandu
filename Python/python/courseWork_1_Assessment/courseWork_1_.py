@@ -1,10 +1,12 @@
-
+# Defining the welcome function and to print a welcome message
 def welcome():
     print("Welcome to the Caesar Cipher")
     print("This program encrypts and decrypts text using Caesar Cipher.")
 
 
+# # Defining the enter_message function to get input from the user
 def enter_message():
+    # Giving choice to the user either to chose encrypt (e) or decrypt (d).
     while True:
         mode = input("Would you like to encrypt (e) or decrypt (d): ")
         if mode == "e" or mode == "d":
@@ -12,9 +14,10 @@ def enter_message():
         else:
             print("Invalid Mode.")
 
+    # Get the data of the input (file or console)
     data = input(
         "Would you like to read from a file (f) or the console (c)? ")
-
+    # If the data is console, get the message from the user
     if data == "c" and mode == "e":
         message = input("What message would you like to encrypt: ")
     elif data == "c" and mode == "d":
