@@ -206,22 +206,32 @@ body {
 /* ---------------------- ⬆️ 1st section over ⬆️ ---------------------- */
 
 /* ---------------------- ⬇️ 2nd section ⬇️ ---------------------- */
-/* .sec_main {
+.sec_main {
   background-color: #6d9773;
   width: 100%;
   height: 100vh;
+}
+
+.sec_main img {
+  width: 1400px;
+  height: 400px;
+}
+.sec_img_container {
   display: flex;
+  justify-content: center;
 }
-
-.sec_heading {
-  font-weight: 600;
-  font-size: 50px;
+.sec_main img {
+  margin-top: 100px;
 }
-
-.sub_first_para {
-  font-size: 18px;
-} */
-
+.sec_main h1 {
+  width: 50%;
+  margin-left: 45px;
+  font-size: 30px;
+}
+.sec_main p {
+  width: 50%;
+  font-size: 20px;
+}
 /* ---------------------- ⬆️ 2nd section over ⬆️ ---------------------- */
 
 /* ---------------------- ⬇️ 3rd section ⬇️ ---------------------- */
