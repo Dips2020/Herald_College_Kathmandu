@@ -1,9 +1,16 @@
 #  Dipesh Bhattarai
 #  Student id = 2357842
+
 # ⬇️Defining the welcome function
+# def welcome():
+#     print("Welcome to the Caesar Cipher")
+#     print("This program encrypts and decrypts text using Caesar Cipher.")
+
+
+# using __doc__
 def welcome():
-    print("Welcome to the Caesar Cipher")
-    print("This program encrypts and decrypts text using Caesar Cipher.")
+    '''Welcome to the Caesar Cipher.
+This program encrypts and decrypts text using Caesar Cipher.'''
 
 
 # ⬇️Defining the enter_message function to get input from the user
@@ -67,7 +74,7 @@ def enter_message():
         else:
             # If the user did not enter a valid input for file_source,
             # this line prints an error message.
-            print("Invalid source")
+            print("Invalid input")
     # Once the loop has been exited,
     # this line returns the values of mode, message, filename, and shift.
     return mode, message, filename, shift
@@ -95,12 +102,22 @@ def encrypt(message, shift):
     return encrypted_text
 
 
-# Defining a decrypt decrypt that takes two parameters, message and shift.
+# ⬇️ By using -shift direct decryption function
+# # Defining a decrypt decrypt that takes two parameters, message and shift.
+# def decrypt(message, shift):
+#     # The reason this works is that encrypting the message with a positive shift
+#     # and then decrypting it with the negative of that shift will
+#     # undo the encryption and return the original message.
+#     return encrypt(message, -shift)
+
+# ⬇️Manual type decryption function
 def decrypt(message, shift):
-    # The reason this works is that encrypting the message with a positive shift
-    # and then decrypting it with the negative of that shift will
-    # undo the encryption and return the original message.
-    return encrypt(message, -shift)
+    decrypted_text = ''
+    for char in message:
+        if char.isalpha():
+            char = chr((ord(char) - 65 - shift) % 26 + 65)
+        decrypted_text += char
+    return decrypted_text
 
 
 # This line defines a function called is_file that takes a filename as a parameter.
@@ -157,7 +174,9 @@ def message_or_file():
 # Define the main function to run the program
 def main():
     # Calling welcome function
-    welcome()
+    # welcome()
+    # ⬇️This welcome is for using __doc__
+    print(welcome.__doc__)
     # Set the conditional variable to True to start the while loop
     conditional = True
     # While loop to keep the program running until the user chooses to quit
@@ -176,6 +195,7 @@ def main():
             if (user_choice) == "n":
                 conditional = False
                 print("Thanks for using the program, goodbye!")
+
 
 #
         # If the user chose to enter a message directly,
