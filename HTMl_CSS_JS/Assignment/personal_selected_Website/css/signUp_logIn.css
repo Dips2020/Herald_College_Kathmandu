@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace, sans-serif;
+}
+/* variables */
+:root {
+  /* --main-color: #ff2c1f; */
+  --main-color: #2776ff;
+  --text-color: #020307;
+  --bg-color: #fff;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#780206, #061161);
+}
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 350px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  padding: 25px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="address"],
+.form textarea {
+  border: none;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.form .gender {
+  margin-right: 10px;
+}
+
+.form button {
+  background: var(--main-color);
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.form button:hover {
+  background: #0006ab;
+}
+.form h1:first-of-type {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.form label {
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.form a {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ==================== Sign In Main ⬇️ ==================== */
+main {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#780206, #061161);
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  text-align: center;
+}
+.main-container .form .heading {
+  font-size: 30px;
+  font-weight: 900;
+}
