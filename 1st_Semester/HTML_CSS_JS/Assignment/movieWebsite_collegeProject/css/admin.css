@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+section {
+  min-height: 100vh;
+}
+li {
+  list-style: none;
+  color: white;
+}
+h1 {
+  color: white;
+}
+.btn {
+  font-weight: 600;
+  background: #47143a;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+}
+.btn:hover {
+  color: #25041d;
+  background: white;
+  padding: 3px 8px;
+  border: 2px solid #25041d;
+}
+.side-bar {
+  position: fixed;
+  background: #47143a;
+  width: 20vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.side-bar .logo-name {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-bar li {
+  font-size: 24px;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+}
+.side-bar li:hover {
+  background: white;
+  color: #47143a;
+  cursor: pointer;
+}
+.container {
+  position: absolute;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+  /* background: #f1f1f1; */
+  background: linear-gradient(#780206, #061161);
+}
+.container .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  height: 10vh;
+  background: #780206;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+}
+.container .header .nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.container .header .nav .search {
+  flex: 3;
+  /* background: cyan; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.container .header .nav .search input[type="text"] {
+  border: none;
+  background: #f1f1f1;
+  padding: 10px;
+  width: 40%;
+}
+.container .header .nav .search button {
+  margin-left: 10px;
+  width: 40px;
+  height: 38px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#780206, #061161);
+  color: white;
+}
+.container .header button i {
+  font-weight: 900;
+}
+
+.container .header .user {
+  /* background: palevioletred; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .user {
+  padding: 20px;
+}
+.container .user a {
+  padding: 10px;
+}
