@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(65, 53, 53);
+}
+nav a {
+  padding: 30px;
+  color: white;
+  font-size: 2rem;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section img {
+  padding: 40px;
+  width: 50%;
+  height: 50%;
+}

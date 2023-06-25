@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>The Document Object</h1>
+    <h2>The querySelector() Method</h2>
+    <h3>Add a background color to the first p element:</h3>
+    <P id='abc'>This is a p element.</p>
+    <p>This is a p element.</p>
+    <script>
+        //document.getElementById('abc').style.backgroundColor="blue";
+        document.querySelector("p").style.backgroundColor = "red";//first becomes red second one is untouched
+    </script> -->
+
+
+    <!-- <h1>The Document Object</h1>
+    <h2>The querySelectorAll() Method</h2>
+    <p>Add a background color all elements with class="example":</p>
+    <h2 class="example">A heading</h2>
+    <p class="example">A paragraph.</p>
+    <script>
+        const nodeList = document.querySelectorAll(".example");
+        for (let i = 0; i < nodeList.length; i++) {
+            nodeList[i].style.backgroundColor = "red";
+        }
+    </script> -->
+
+    <!-- <p onclick=alert('hello')>sadfasdf</p> -->
+    <!-- <p>sadfasdf</p> -->
+
+
+
+
+    <!--! task 3 ⬇️ -->
+    <p id="abc">Click Me</p>
+    <!-- <button id="abc">Sign Up</button> -->
+    <script>
+        //for p tag ⬇️
+        let p = document.querySelector("#abc");
+        p.addEventListener('mouseover', function () {
+            // p.addEventListener('dblclick', function () {
+            alert("Oeee!");
+        });
+
+        //for button ⬇️
+        // let button = document.querySelector("#abc");
+        // button.addEventListener('dblclick', function () {
+        // button.addEventListener('mouseover', function () {
+        //     alert("Oeee!");
+        // });
+    </script>
+
+
+
+
+
+    <!-- <script src="./week_2.js"></script>
+    <script src="./DOM.js"></script> -->
+</body>
+
+</html>
