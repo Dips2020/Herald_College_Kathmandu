@@ -24,7 +24,7 @@ section .container {
 }
 section .flex-container {
   width: 80%;
-  height: 600px;
+  height: 680px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,21 +71,54 @@ h2:hover {
   color: rgb(78, 73, 73);
 }
 
-/* h1 {
-  width: 200px;
+/* ! ============================== */
+.flex-container .result-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 350px;
+  border-radius: 5px;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s, transform 0.3s;
   text-align: center;
-  font-size: 30px;
-  padding: 10px;
-  background: linear-gradient(#200122, #6f0000);
-  border-radius: 16px;
   box-shadow: -2px 2px 10px 4px rgba(41, 31, 53, 0.8);
-}
-h1:hover {
-  cursor: pointer;
-  color: rgb(164, 164, 164);
   background: linear-gradient(#6f0000, #200122);
-  border-radius: 16px;
-} */
+}
+
+.result-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.result-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(216, 216, 216);
+}
+
+.result-message {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: rgb(164, 164, 164);
+}
+
+.loader {
+  display: none;
+  position: absolute;
+  margin-top: 350px;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.5s linear infinite;
+}
+/* ! ========================================= */
 
 button {
   color: white;
