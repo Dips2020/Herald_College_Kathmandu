@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+
+<body>
+    <h1>Promises</h1>
+
+    <script>
+        // 1
+        // let promise = new Promise(function (resolve, reject) {
+        //     setTimeout(function () {
+        //         resolve("Success!");
+        //     }, 2000);
+        // });
+
+        // promise.then(function (value) {
+        //     console.log(value);
+        // }).catch(function (error) {
+        //     console.log(error);
+        // });
+
+
+        //2
+        // var a = Number(prompt("Enter a number: "))
+        // var p = new Promise(function (resolve, reject) {
+        //     if (a % 2 !== 0) {
+        //         resolve("Odd");
+        //     } else {
+        //         reject("Even number")
+        //     }
+        // });
+        // p.then(function (value) {
+        //     console.log(`The number you have entered is ${value}.`);
+        // }).catch(function (value2) {
+        //     console.log(`The number you have entered is ${value2}.`);
+        // });
+
+
+        //3
+        // var b = prompt("Enter a fruit name: ")
+        // var p = new Promise(function (resolve, reject) {
+        //     if (b == "Watermelon") {
+        //         resolve("Correct !!");
+        //     } else {
+        //         reject("Wrong !!")
+        //     }
+        // });
+        // p.then(function (value) {
+        //     console.log(`The fruit name you have entered is ${value}.`);
+        // }).catch(function (value2) {
+        //     console.log(`The fruit name you have entered is ${value2}.`);
+        // });
+
+        //4
+        var counter = 0;
+        var c = Number(prompt("Enter a number: "))
+        var promises = new Promise(function (resolve, reject) {
+            if (c % 2 == 0) {
+                resolve(c)
+            }
+        });
+        var promises2 = promises.then(function (value) {
+            for (var i = 1; i <= c; i++) {
+                if (c % i == 0) {
+                    counter++;
+                }
+            }
+            if (counter == 2) {
+                console.log("The entered number is prime number.")
+            } else {
+                console.log("The entered number is composite number.")
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>

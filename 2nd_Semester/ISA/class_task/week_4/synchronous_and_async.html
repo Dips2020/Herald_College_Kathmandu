@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorail 4</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <script>
+        //! 1 setTimeout
+        // function to_check_synchronous() {
+        //     setTimeout(function () {
+        //         console.log('Hello First Message');
+        //     }, 2000)
+
+        //     console.log('Hello Second Message')
+        // }
+        // to_check_synchronous()
+
+        //! 2 setInterval
+        function to_check_synchronous() {
+            setInterval(function () {
+                console.log('Hello First Message');
+
+            }, 2000)
+            // clearInterval(10000)
+
+            console.log('Hello Second Message')
+        }
+        to_check_synchronous()
+    </script>
+</body>
+
+</html>
