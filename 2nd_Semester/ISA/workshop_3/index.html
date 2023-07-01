@@ -13,38 +13,36 @@
 
 <body>
     <section>
-        <div class="container">
-            <div class="flex-container">
+        <div class="container" id="mainContainer">
 
-                <!--! ⬇️====⬇️ first part ⬇️====⬇️  -->
+            <!--! ⬇️====⬇️ first part ⬇️====⬇️  -->
+            <div class="flex-container">
                 <div class="mini-container">
                     <h2>🙂Choose!👇</h2>
                 </div>
-
-
                 <div class="button-container">
                     <div class="option">
                         <div class="option">
-                            <button class="game" onClick="playGame('rock')">Rock🪨</button>
-                            <button class="game" onClick="playGame('paper')">Paper📃</button>
-                            <button class="game" onClick="playGame('scissors')">Scissor✂️</button>
+                            <button class="game" onclick="button_click('rock')">Rock🪨</button>
+                            <button class="game" onclick="button_click('paper')">Paper📃</button>
+                            <button class="game" onclick="button_click('scissors')">Scissor✂️</button>
                         </div>
                     </div>
-
-                    <div id="result" class="result-card">
-                        <h3 class="result-title">Result</h3>
-                        <p class="result-message"></p>
-                    </div>
-
-                    <!-- loading symbol -->
-                    <div id="loader" class="loader"></div>
-
-                    <!--! ⬇️====⬇️ second part ⬇️====⬇️  -->
-
-
-
                 </div>
             </div>
+
+            <!--! ⬇️====⬇️ second part ⬇️====⬇️  -->
+            <!-- loading symbol -->
+            <div id="loader" class="loader"></div>
+            <!-- Result card -->
+            <div id="result" class="result-card">
+                <h3 class="result-title">🙂Result!👇</h3>
+                <p class="result-message" id="result_msg"></p>
+                <button class="card-btn" id="tryAgain"> <span>Play Again</span></button>
+            </div>
+
+
+        </div>
     </section>
 
     <script src="./js/index.js"></script>
