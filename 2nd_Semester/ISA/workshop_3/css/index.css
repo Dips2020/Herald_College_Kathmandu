@@ -10,6 +10,11 @@ body {
   height: 100vh;
   color: white;
 }
+section .name {
+  font-size: 30px;
+  color: #090606;
+  letter-spacing: 4px;
+}
 section {
   width: 100%;
   height: 100%;
@@ -21,7 +26,7 @@ section {
 }
 section .container {
   width: 80%;
-  height: 680px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +85,7 @@ h2:hover {
 /* ! <==========> ⬇️ result-card part <==========> */
 section .container .result-card {
   width: 80%;
-  height: 680px;
+  height: 600px;
   /* background: linear-gradient(#00dbde, #fc00ff); */
 
   display: none;
