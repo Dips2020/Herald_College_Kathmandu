@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+    <h2 id="geolocation">Geolocation</h2>
+
+    <script>
+        // ⬇️1 object
+        // var abc = {
+        //     name: "Dipesh",
+        //     age: 20,
+        //     section: "A",
+        //     Total: function () {
+        //         console.log("This is inside object")
+        //     }
+        // }
+        // console.log(abc.name)
+        // console.log(abc.age)
+        // console.log(abc.section)
+        // console.log(abc.Total());
+
+
+        // 2 ⬇️JSON
+        // var abc = {
+        //     "name": "Dipesh",
+        //     "age": 20,
+        //     "section": "A",
+        // }
+        // console.log(abc.name)
+        // console.log(abc.age)
+        // console.log(abc.section)
+
+
+        // 3 ⬇️JSON
+        // var data = {
+        //     "name": "DiPS", "age": 20, "address": "Budhanilkantha-10, Kapan"
+        // }
+        // console.log(`Name is ${data.name} whose age is ${data.age} and he lives in ${data.address}`)
+
+
+
+        // 4 ⬇️nested json
+        // const data = {
+        //     "name": "DiPS",
+        //     "age": 21,
+        //     "hobby": {
+        //         "reading": true,
+        //         "gaming": false,
+        //         "sport": "football"
+        //     },
+        //     "class": ["JavaScript", "CSS", "HTML"],
+        // }
+        // console.log(data.name)
+        // console.log(data.hobby)
+        // console.log(data.hobby.sport)
+        // console.log(data.class[1])
+
+        // ⬇️JSON.parse
+        // var data = `{ "name": "DiPS", "Age": 20 }`
+        // var result = JSON.parse(data)
+        // console.log(result)
+
+
+        // ⬇️JSON.stringify
+        // var abc = {
+        //     name: "Dipesh",
+        //     age: 20,
+        //     section: "A",
+        //     Total: function () {
+        //         console.log("This is inside object")
+        //     }
+        // }
+        // var a = JSON.stringify(abc)
+        // console.log(a)
+
+        // ⬇️
+        // const myElement = document.getElementById("geolocation")
+        // function getLocation() {
+        //     if (navigator.geolocation) {
+        //         navigator.geolocation.getCurrentPosition(showPosition);
+        //     } else {
+        //         myElement.innerHTML = "Geolocation is not supported by this browser.";
+        //     }
+        // }
+        // function showPosition(position) {
+        //     myElement.innerHTML = "Latitude:" + position.coords.latitude + "<br>Longitude:" + position.coords.longitude;
+        // }
+        // getLocation()
+    </script>
+</body>
+
+</html>
