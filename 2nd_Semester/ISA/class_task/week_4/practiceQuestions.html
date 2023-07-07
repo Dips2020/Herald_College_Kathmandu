@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+</head>
+
+<body>
+    <h1>Practice Question</h1>
+
+    <script>
+        // ⬇️question 1 (Factorial)
+        // function calculateFactorial(number) {
+        //     let factorial = 1;
+
+        //     for (let i = 1; i <= number; i++) {
+        //         factorial = factorial * i;
+        //     }
+
+        //     return factorial;
+        // }
+
+        // const result = calculateFactorial(5);
+        // console.log(result);
+
+        // ⬇️question 2 (Is Even or odd)
+        // function isEven(number) {
+        //     if (number % 2 == 0) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // }
+
+        // const isEvenResult = isEven(8);
+        // console.log(isEvenResult);
+
+        //⬇️ question 3 (Create an array and print each element using for loop, foreach loop and map method)
+        // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // // for loop
+        // for (let i = 0; i < numbers.length; i++) {
+        //     console.log(numbers[i]);
+        // }
+
+        // // foreach function
+        // numbers.forEach(function (element) {
+        //     console.log(element);
+        // });
+
+        // // map function
+        // numbers.map((number) => {
+        //     console.log(number);
+        // });
+
+        // //⬇️ HIGHER ORDER FUNCTION QUESTIONS (VERY VERY IMPORTANT) | PLEASE PRACTICE THE SYNTAX FOR EACH FUNCTION (Map, filter, reduce and foreach)
+        // //⬇️ question 4 (Map function)
+        // function calculateTax(prices) {
+        //     return prices.map((price) => price * 0.15);
+        // }
+
+        // const prices = [2400, 3500, 3200, 4300, 1900, 2900, 3100];
+
+        // const updatedPrice = calculateTax(prices);
+        // console.log(updatedPrice);
+        // // how it works? => function called here calculateTax(prices) => passed in prices array as parameter, function executes
+        // // and we get back the new array with new calculated value, store it in new variable updatedPrice and is logged to console.
+
+        // //⬇️ question 5 (Filter function)
+        // function ratingHigherThanFour(books) {
+        //     return books.filter((book) => book.rating > 4);
+        // }
+
+        // const books = [
+        //     { title: "The Great Gatsby", rating: 4.2 },
+        //     { title: "To kill a Mockingbird", rating: 4.5 },
+        //     { title: "1984", rating: 4.9 },
+        //     { title: "Brave New World", rating: 3.8 },
+        //     { title: "In Search of Lost Time by Marcel Proust", rating: 4.7 },
+        //     {
+        //         title: "One Hundred Years of Solitude by Gabriel Garcia Marquez",
+        //         rating: 3.9,
+        //     },
+        // ];
+
+        // const highlyRatedBooks = ratingHigherThanFour(books);
+        // console.log(highlyRatedBooks);
+
+        //⬇️ question 6 (Calculate total expense)
+
+        function totalExpense(expenses) {
+            return expenses.reduce((total, expense) => total + expense);
+        }
+
+        const expenses = [1000, 5000, 4500, 9050, 8900, 3200];
+
+        const totalExp = totalExpense(expenses);
+        console.log(totalExp);
+    </script>
+</body>
+
+</html>
