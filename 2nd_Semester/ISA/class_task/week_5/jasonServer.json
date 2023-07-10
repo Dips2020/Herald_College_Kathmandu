@@ -1,0 +1,10 @@
+{
+    "name": "DiPS",
+    "age": 21,
+    "hobby": {
+        "reading": true,
+        "gaming": false,
+        "sport": "football"
+    },
+    "class": ["JavaScript", "CSS", "HTML"]
+}
