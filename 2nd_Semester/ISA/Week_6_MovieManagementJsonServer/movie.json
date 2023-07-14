@@ -1,0 +1,19 @@
+{
+  "movies": [
+    {
+      "title": "Kung Fu Panda",
+      "genre": "Adventure",
+      "id": 1
+    },
+    {
+      "title": "Superman",
+      "genre": "Action",
+      "id": 2
+    },
+    {
+      "title": "The Flash",
+      "genre": "Action",
+      "id": 3
+    }
+  ]
+}
