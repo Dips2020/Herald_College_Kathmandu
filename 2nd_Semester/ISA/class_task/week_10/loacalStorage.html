@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- ⬇️1 -->
+    <p id="name_"></p>
+    <p id="age_"></p>
+    <p id="address_"></p>
+
+    <!--! ⬇️2 -->
+    <button onclick="myfunction()">Add Keyvalue</button>
+
+    <script>
+        // <!-- ⬇️1 -->
+        function details() {
+            let name = prompt("Enter your name: ");
+            let age = prompt("Enter your age: ");
+            let address = prompt("Enter your address: ");
+
+            localStorage.setItem("Username", `${name}`);
+            localStorage.setItem("Age", `${age}`);
+            localStorage.setItem("Address", `${address}`);
+
+            let NewUsername = localStorage.getItem("Username");
+            let NewAge = localStorage.getItem("Age");
+            let NewAddress = localStorage.getItem("Address");
+
+
+            if (NewUsername, NewAge, NewAddress) {
+                name_.innerHTML = NewUsername;
+            }
+            if (NewAge) {
+                age_.innerHTML = NewAge;
+            }
+            if (NewAddress) {
+                address_.innerHTML = NewAddress;
+            }
+
+        }
+        details()
+
+        // // To clear everything in localStorage
+        // localStorage.clear();
+
+        // localStorage.setItem("Age", `${age}`);
+        // let ou
+
+        // <!--! ⬇️2 -->
+        // function myfunction() {
+        //     let input = prompt("Enter a name: ");
+        //     let keyname = prompt("Enter the keyname: ");
+
+        //     localStorage.setItem(`${keyname}`, `${input}`);
+        // }
+        // // To clear everything in localStorage
+        // localStorage.clear();
+
+    </script>
+</body>
+
+</html>
