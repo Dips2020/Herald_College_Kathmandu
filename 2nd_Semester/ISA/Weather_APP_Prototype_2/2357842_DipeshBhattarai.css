@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 4px;
+  /* font-family: "American Fox", sans-serif; */
+  font-family: "Roboto Slab", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #000000d0;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://wallpaperaccess.com/full/8625765.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  color: white !important;
+}
+section .flex-container {
+  /* background: #000000d0; */
+  height: 500px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border-radius: 8px; */
+  /* box-shadow: -2px 12px 12px 5px rgba(0, 0, 0, 0.7); */
+}
+#downArrow-icon {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+.search {
+  /* background: rgb(229, 215, 215); */
+  position: absolute;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgba(120, 180, 230, 0.7); */
+  backdrop-filter: blur(1.5px);
+  box-shadow: -2px 12px 12px 5px rgba(0, 0, 0, 0.7);
+}
+
+.search .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-radius: 8px;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  outline: none;
+  background-color: rgb(229, 215, 215);
+  color: rgb(132, 3, 3);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: -2px 2px 8px 4px rgba(0, 0, 0, 0.5);
+}
+.search #buttonClick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 8px;
+  color: black;
+  font-size: 20px;
+  width: 450px;
+  background-color: rgb(229, 215, 215);
+  box-shadow: -2px 2px 8px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ! alert */
+.alert {
+  padding: 1em;
+  color: rgb(132, 3, 3);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  z-index: 10000;
+  height: 150px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #000000d0; */
+  box-shadow: -2px 12px 12px 5px rgba(0, 0, 0, 0.7);
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 100vh;
+  width: 100%;
+  background: red; */
+}
+.city-name span {
+  font-size: 18px;
+  /* color: rgb(255, 255, 255); */
+  color: yellow;
+  font-weight: 600;
+}
+
+.weather .weather-flex-container {
+  margin-top: 50px;
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 70px;
+  width: 200px;
+  height: 500px;
+  border-radius: 8px;
+}
+.weather-details-container {
+  margin-top: 50px;
+  position: absolute;
+  left: 0;
+  margin-left: 350px;
+  box-shadow: -2px 12px 12px 5px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 350px;
+  border-radius: 8px;
+  /* background: #000000d0; */
+  background-color: rgba(120, 180, 230, 0.5);
+  backdrop-filter: blur(1.5px);
+}
+
+.weather .city-name {
+  left: 0;
+  /* width: 240px; */
+  width: 290px;
+  height: 245px;
+  border-radius: 8px;
+  background: #000000d0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background: rgba(120, 180, 230, 0.5);
+  backdrop-filter: blur(1.5px);
+  box-shadow: -2px 12px 12px 5px rgba(0, 0, 0, 0.7);
+}
+.city-name .city {
+  color: rgb(132, 3, 3);
+  font-weight: 900;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.weather .temp-date {
+  /* background: #000000d0; */
+  left: 0;
+  /* width: 240px; */
+  width: 290px;
+  height: 245px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: rgba(120, 180, 230, 0.5);
+  backdrop-filter: blur(1.5px);
+  box-shadow: -2px 12px 12px 5px rgba(0, 0, 0, 0.7);
+}
+.temp-date #temp-degree {
+  color: rgb(206, 96, 0);
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.temp-date .date {
+  letter-spacing: 1.5px;
+  color: rgb(132, 3, 3);
+  font-weight: 800;
+  font-size: 18px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.temp-date .description {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: yellow;
+  font-weight: 600;
+}
+.weather .weather-details {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  margin-left: 25px;
+  font-weight: 600;
+  font-size: 30px;
+}
+.weather-details .humidity,
+.pressure,
+.wind {
+  color: rgb(132, 3, 3);
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.past-data {
+  margin-top: 50px;
+  right: 0;
+  margin-right: 70px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 500px;
+}
+.past-data h2 {
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: rgb(132, 3, 3);
+}
+.weatherhistory {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  /* background: black; */
+  background-color: rgba(120, 180, 230, 0.5);
+  box-shadow: -2px 12px 12px 5px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  overflow: auto;
+  backdrop-filter: blur(1.5px);
+}
+
+.weather-card {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 8px 12px 3px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1.5px);
+  border-radius: 8px;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.weather-card:hover {
+  box-shadow: -2px 12px 12px 5px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
