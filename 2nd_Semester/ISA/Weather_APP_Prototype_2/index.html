@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./2357842_DipeshBhattarai.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <section class="section_container">
+        <!--  Search Area ⬇️ -->
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search city..." autocomplete="off">
+            <button id="buttonClick">
+                <i class='bx bxs-search-alt-2'></i>
+            </button>
+        </div>
+        <!--  Weather details ⬇️ -->
+        <div class="weather">
+            <div class="city-name">
+                <h3><span>City</span></h3>
+                <i id="downArrow-icon" class='bx bxs-chevrons-down'></i>
+                <h2 class="city"></h2>
+            </div>
+            <div class="temp-date">
+                <h1 class="temp" id="temp-degree"></h1>
+                <div class="date"></div>
+                <img src="" alt="Weather Icon " class="icon" />
+                <div class="description"></div>
+            </div>
+            <div class="weather-details">
+                <div class="humidity"></div>
+                <div class="pressure"> Pressure: 1450pa</div>
+                <div class="wind"></div>
+            </div>
+        </div>
+        <!-- Last 7 days data container -->
+        <div class="past-data">
+            <h2>Past 7 Days Weather</h2>
+            <div class="weatherhistory" id="weatherHistory">
+                <!-- Past 7 Days weather will be here -->
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./2357842_DipeshBhattarai.js"></script>
+
+</body>
+
+</html>

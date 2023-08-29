@@ -9,7 +9,7 @@ async function getWeatherApi(city) {
     const weatherData = await response.json();
 
     if (weatherData.cod === "404") {
-      alertBox("Oopps!! City not found.", "rgba(120, 180, 230, 0.9)");
+      alertBox("Oopps!! City not found.", "rgb(132, 3, 3);");
     } else {
       getWeather(weatherData);
     }
@@ -155,7 +155,7 @@ function alertBox(message, color) {
 
   setTimeout(function () {
     alertBox.remove();
-  }, 1500);
+  }, 2000);
 }
 
 // executes only when html document is fully loaded
