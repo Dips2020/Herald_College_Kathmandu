@@ -1,3 +1,19 @@
 npm install -g json-server
 json-server --watch movie.json
 
+
+To run this using command prompt from the terminal.⬇️
+Microsoft Windows [Version 10.0.22621.2215]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Herald_ING\Herlad_College_KTM>cd ..        
+
+D:\Herald_ING>cd Herlad_College_KTM
+
+D:\Herald_ING\Herlad_College_KTM>cd 2nd_Semester 
+
+D:\Herald_ING\Herlad_College_KTM\2nd_Semester>cd ISA 
+
+D:\Herald_ING\Herlad_College_KTM\2nd_Semester\ISA>cd Week_6_MovieManagementJsonServer
+
+D:\Herald_ING\Herlad_College_KTM\2nd_Semester\ISA\Week_6_MovieManagementJsonServer>json-server --watch movie.json

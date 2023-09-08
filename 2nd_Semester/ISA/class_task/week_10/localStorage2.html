@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="idname"></p>
+    <p id="idage"></p>
+    <button onclick="myFunction()">Add</button>
+
+    <script>
+        function myFunction() {
+            let name = prompt("Enter name");
+            let age = prompt("Enter age");
+
+            localStorage.setItem("Username", `${name}`);
+            localStorage.setItem("Age", `${age}`);
+            details()
+        }
+        function details() {
+            let personName = localStorage.getItem("Username");
+            let personAge = localStorage.getItem("Age");
+
+            if (personName) {
+                idname.innerHTML = personName;
+            }
+            if (personAge) {
+                idage.innerHTML = personAge;
+            }
+        }
+        details()
+    </script>
+</body>
+
+</html>

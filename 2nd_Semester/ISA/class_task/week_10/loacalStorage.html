@@ -15,11 +15,11 @@
     <p id="address_"></p>
 
     <!--! ⬇️2 -->
-    <button onclick="myfunction()">Add Keyvalue</button>
+    <button onclick="addKeyValue()">Add Keyvalue</button>
 
     <script>
-        // <!-- ⬇️1 -->
-        function details() {
+        // Function to add name, age, and address to local storage using button onclick
+        function addKeyValue() {
             let name = prompt("Enter your name: ");
             let age = prompt("Enter your age: ");
             let address = prompt("Enter your address: ");
@@ -27,13 +27,24 @@
             localStorage.setItem("Username", `${name}`);
             localStorage.setItem("Age", `${age}`);
             localStorage.setItem("Address", `${address}`);
+            details()
+        }
+
+        // <!-- ⬇️1 -->
+        function details() {
+            // let name = prompt("Enter your name: ");
+            // let age = prompt("Enter your age: ");
+            // let address = prompt("Enter your address: ");
+
+            // localStorage.setItem("Username", `${name}`);
+            // localStorage.setItem("Age", `${age}`);
+            // localStorage.setItem("Address", `${address}`);
 
             let NewUsername = localStorage.getItem("Username");
             let NewAge = localStorage.getItem("Age");
             let NewAddress = localStorage.getItem("Address");
 
-
-            if (NewUsername, NewAge, NewAddress) {
+            if (NewUsername) {
                 name_.innerHTML = NewUsername;
             }
             if (NewAge) {
@@ -42,7 +53,6 @@
             if (NewAddress) {
                 address_.innerHTML = NewAddress;
             }
-
         }
         details()
 
